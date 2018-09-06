@@ -7,7 +7,7 @@
   $phone = $_POST['phone'];
   
   if(!empty($username) || !empty($password) || !empty($gender) || !empty($email) || !empty($phoneCode) || !empty($phone) ){
-	  $conn = new mysqli("localhost", "root", "", "youtube");
+	  $conn = new mysqli("MariaDB", "root", "", "youtube");
 	  
 	  if (mysqli_connect_error()){
 		  die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
